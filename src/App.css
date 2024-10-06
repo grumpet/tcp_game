@@ -1,0 +1,52 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.upper-panel {
+  flex: 1; /* Upper panel takes up the remaining space */
+  height: 50vh; /* Fix the upper panel height to exactly 50% of the viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Customizable */
+}
+
+.bottom-panel {
+  display: flex;
+  height: 50vh; /* Fix the bottom panel height to exactly 50% of the viewport height */
+  justify-content: space-around; /* Spread the columns evenly */
+  align-items: center;
+  background-color: #e0e0e0; /* Customizable */
+  padding: 20px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the SpeechBubble and icon vertically */
+}
+
+.bottom-icon-container {
+  display: flex;
+  height: 25vh;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+
+}
+
+.top-icon-container {
+  display: flex;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  
+}
+
+.icon-container .FaComputer, .icon-container .FaServer {
+  margin-top: 10px;
+}
+
