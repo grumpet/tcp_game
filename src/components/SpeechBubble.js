@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import './SpeechBubble.css';
 
-const SpeechBubble = ({ question, answers, correctAnswer,onCorrectAnswer }) => {
+const SpeechBubble = ({ question, answers, correctAnswer, onCorrectAnswer }) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
 
   const handleAnswerClick = (answer) => {
     setSelectedAnswer(answer);
     const isAnswerCorrect = answer === correctAnswer;
-    setIsCorrect(answer === correctAnswer);
-    if (isAnswerCorrect) {
-        onCorrectAnswer(); // Trigger next question if the answer is correct
-      }
+    setIsCorrect(isAnswerCorrect);
+
+    // Trigger the parent callback with the answer status and the answer text
+    onCorrectAnswer(isAnswerCorrect, answer);
   };
 
   return (
@@ -28,11 +28,6 @@ const SpeechBubble = ({ question, answers, correctAnswer,onCorrectAnswer }) => {
           </button>
         ))}
       </div>
-      {isCorrect !== null && (
-        <div className="result">
-          {isCorrect ? 'Correct!' : 'Incorrect!'}
-        </div>
-      )}
     </div>
   );
 };
