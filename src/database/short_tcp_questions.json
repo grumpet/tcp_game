@@ -1,0 +1,51 @@
+{
+    "databaseName": "Level 2",
+    "questions": [
+      {
+        "question": "What's the first step of the handshake?",
+        "answers": ["SYN", "ACK", "FIN", "RST"],
+        "correctAnswer": "SYN"
+      },
+      {
+        "question": "What does the server respond after SYN?",
+        "answers": ["SYN-ACK", "ACK", "FIN", "PSH"],
+        "correctAnswer": "SYN-ACK"
+      },
+      {
+        "question": "What does the client send to complete the handshake?",
+        "answers": ["SYN", "SYN-ACK", "ACK", "FIN"],
+        "correctAnswer": "ACK"
+      },
+      {
+        "question": "What's the server's role in data transmission?",
+        "answers": ["Respond with ACK", "Send SYN", "Send FIN", "Send RST"],
+        "correctAnswer": "Respond with ACK"
+      },
+      {
+        "question": "Which flag terminates the connection?",
+        "answers": ["FIN", "SYN", "RST", "ACK"],
+        "correctAnswer": "FIN"
+      },
+      {
+        "question": "What does the server send after receiving a FIN?",
+        "answers": ["FIN-ACK", "SYN", "RST", "SYN-ACK"],
+        "correctAnswer": "FIN-ACK"
+      },
+      {
+        "question": "What does the client send after FIN-ACK?",
+        "answers": ["ACK", "FIN", "SYN", "RST"],
+        "correctAnswer": "ACK"
+      },
+      {
+        "question": "What word does the server send to the computer during the connection?",
+        "answers": ["TCP", "UDP", "HTTP", "IP"],
+        "correctAnswer": "TCP"
+      },
+      {
+        "question": "What's the connection state after the final ACK?",
+        "answers": ["CLOSED", "ESTABLISHED", "SYN_SENT", "FIN_WAIT"],
+        "correctAnswer": "CLOSED"
+      }
+    ]
+  }
+  

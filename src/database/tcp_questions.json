@@ -1,0 +1,46 @@
+{
+    "databaseName": "Level 1",
+    "questions": [
+      {
+        "question": "What is the first step in establishing a TCP connection?",
+        "answers": ["SYN", "ACK", "FIN", "RST"],
+        "correctAnswer": "SYN"
+      },
+      {
+        "question": "After the client sends a SYN packet, what does the server respond with?",
+        "answers": ["SYN-ACK", "ACK", "FIN", "PSH"],
+        "correctAnswer": "SYN-ACK"
+      },
+      {
+        "question": "What does the client send to complete the three-way handshake?",
+        "answers": ["SYN", "SYN-ACK", "ACK", "FIN"],
+        "correctAnswer": "ACK"
+      },
+      {
+        "question": "After the three-way handshake, what is the role of the client and server during data transmission?",
+        "answers": ["The client sends data and the server responds with ACK", "The server sends data and the client does nothing", "Both send SYN packets", "They terminate the connection"],
+        "correctAnswer": "The client sends data and the server responds with ACK"
+      },
+      {
+        "question": "Which flag is used to gracefully terminate a TCP connection?",
+        "answers": ["FIN", "SYN", "RST", "ACK"],
+        "correctAnswer": "FIN"
+      },
+      {
+        "question": "What does the server send after receiving a FIN packet?",
+        "answers": ["FIN-ACK", "SYN", "RST", "SYN-ACK"],
+        "correctAnswer": "FIN-ACK"
+      },
+      {
+        "question": "What happens after the client receives the server's FIN-ACK?",
+        "answers": ["The client sends an ACK", "The client sends a FIN", "The connection is reset", "The client sends a SYN"],
+        "correctAnswer": "The client sends an ACK"
+      },
+      {
+        "question": "What state is the connection in after the client sends the final ACK?",
+        "answers": ["CLOSED", "ESTABLISHED", "SYN_SENT", "FIN_WAIT"],
+        "correctAnswer": "CLOSED"
+      }
+    ]
+  }
+  
